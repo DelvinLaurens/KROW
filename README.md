@@ -104,5 +104,59 @@ Global work needs global currency flexibility.
 
 ---
 
+## 📊 Project Workflow
+
+Below is the technical flow of **Krow**, illustrating the interaction between the Client, Freelancer, and the Sui Ecosystem.
+
+### 1. Interaction Flow
+```mermaid
+sequenceDiagram
+    participant C as Client
+    participant S as Krow Smart Contract
+    participant W as Walrus Storage
+    participant D as DeepBook (Liquidity)
+    participant F as Freelancer
+
+    Note over C,F: Phase 1: Agreement & Escrow
+    C->>S: 1. Create Project & Lock Funds (SUI/USDC)
+    S-->>F: 2. Notification: Project Funded
+
+    Note over C,F: Phase 2: Execution & Delivery
+    F->>F: Creative Work / Coding
+    F->>W: 3. Upload Encrypted Deliverables
+    W-->>F: Return Blob ID & Metadata
+    F->>S: 4. Submit Proof-of-Delivery (Blob ID)
+    S-->>C: 5. Notification: Work Delivered
+
+    Note over C,F: Phase 3: Approval & Settlement
+    C->>S: 6. Review & Click "Approve"
+    S->>D: 7. Request Swap (if needed)
+    D-->>S: Return Preferred Token (e.g., USDC)
+    S->>F: 8. Release Payment & Unlock Key
+    S->>C: 9. Access Final Deliverables (Walrus)
+    
+    Note over C,F: Phase 4: Feedback & Rep
+    C->>S: 10. Rate Freelancer (On-chain Reputation)
+
+    graph TD
+    User((User: Client/Freelancer)) -->|zkLogin| Frontend[Next.js Application]
+    
+    subgraph Sui Ecosystem
+        Frontend -->|Execute Move Calls| SuiContract[Krow Smart Escrow]
+        SuiContract -->|Read/Write Metadata| Objects[Sui Objects / NFTs]
+        SuiContract -->|Swap Assets| DB[DeepBook CLOB]
+    end
+
+    subgraph Decentralized Storage
+        Frontend -->|Upload Large Assets| Walrus[Walrus Storage]
+        Walrus -->|Blob ID Verification| SuiContract
+    end
+
+    style Sui Ecosystem fill:#f9f,stroke:#333,stroke-width:2px
+    style Decentralized Storage fill:#bbf,stroke:#333,stroke-width:2px
+
+    
 **Developed for the Lofi the Yeti Hackathon.**
 *Bridging the gap between creative freedom and programmable trust.*
+
+
