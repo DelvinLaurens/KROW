@@ -1,5 +1,5 @@
 <p>
-  <img src="assets/logo without bg by chatgptplus.png" width="250" alt="Krow Logo">
+  <img src="assets/logokrow.png" width="250" alt="Krow Logo">
 </p>
 
 
