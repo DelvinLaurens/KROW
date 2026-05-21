@@ -176,5 +176,10 @@ graph TD
 
 ---
 
-## Developed for the Lofi the Yeti Hackathon
-*Bridging the gap between creative freedom and programmable trust.*
+<div align="center">
+
+Built for the **Lofi the Yeti Hackathon** 🏔️
+
+*Bridging creative freedom with programmable trust.*
+
+</div>
