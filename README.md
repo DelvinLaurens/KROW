@@ -1,4 +1,4 @@
-# KROW 🚀
+# KROW 
 ### Programmable Trust for Global Freelance Work
 
 **KROW** is a decentralized freelance escrow platform built on the **Sui ecosystem**. It protects both freelancers and clients using programmable smart contracts, encrypted deliverable vaults, and immutable on-chain proof-of-delivery.
@@ -152,7 +152,9 @@ sequenceDiagram
     Note over C,F: Phase 4: Feedback & Rep
     C->>S: 10. Rate Freelancer (On-chain Reputation)
 ```
+---
 
+### 2. Technical Architecture
 ```mermaid
 graph TD
     User((User: Client/Freelancer)) -->|zkLogin| Frontend[Next.js Application]
@@ -174,6 +176,5 @@ graph TD
 
 ---
 
-## 🚀 Developed for the Lofi the Yeti Hackathon
-
+## Developed for the Lofi the Yeti Hackathon
 *Bridging the gap between creative freedom and programmable trust.*
