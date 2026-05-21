@@ -1,9 +1,9 @@
-# YetiWork 🚀
+# KROW 🚀
 ### Programmable Trust for Global Freelance Work
 
-**YetiWork** is a decentralized freelance escrow platform built on the **Sui ecosystem**. It protects both freelancers and clients using programmable smart contracts, encrypted deliverable vaults, and immutable on-chain proof-of-delivery.
+**KROW** is a decentralized freelance escrow platform built on the **Sui ecosystem**. It protects both freelancers and clients using programmable smart contracts, encrypted deliverable vaults, and immutable on-chain proof-of-delivery.
 
-By eliminating expensive intermediaries and replacing them with trustless code, YetiWork ensures that freelancers get paid for their work and clients receive exactly what they paid for—faster, cheaper, and more securely.
+By eliminating expensive intermediaries and replacing them with trustless code, KROW ensures that freelancers get paid for their work and clients receive exactly what they paid for—faster, cheaper, and more securely.
 
 ---
 
@@ -19,12 +19,12 @@ The modern freelance economy (worth $450B+) still relies on centralized platform
 
 ---
 
-## 🟢 The Solution: YetiWork Infrastructure
+## 🟢 The Solution: KROW Infrastructure
 
-YetiWork replaces "Centralized Trust" with **"Programmable Trust."**
+KROW replaces "Centralized Trust" with **"Programmable Trust."**
 
 ### 🧠 Sui — The Brain (Smart Escrow)
-Every project on YetiWork is a **Sui Object**. 
+Every project on KROW is a **Sui Object**. 
 - **Non-Custodial Escrow:** Funds are locked in a smart contract, not held by a company.
 - **Programmable Logic:** Payments are released automatically based on milestones, deadlines, or multisig approvals.
 - **Fast & Cheap:** Leveraging Sui’s parallel execution for near-instant agreement updates.
@@ -68,7 +68,7 @@ Global work needs global currency flexibility.
 
 ## 🔄 How It Works (The Workflow)
 
-1. **Agreement:** Client creates a project, defines milestones, and locks SUI/USDC into the **YetiWork Escrow Contract**.
+1. **Agreement:** Client creates a project, defines milestones, and locks SUI/USDC into the **KROW Escrow Contract**.
 2. **Execution:** Freelancer starts working. Progress is tracked via on-chain milestones.
 3. **Delivery:** Freelancer uploads the final asset to **Walrus**. The system generates an encrypted blob and records the proof on Sui.
 4. **Verification:** Client receives a notification. They can view a preview or low-res version.
