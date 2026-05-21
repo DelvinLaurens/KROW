@@ -23,20 +23,32 @@ The modern freelance economy (worth $450B+) still relies on centralized platform
 
 KROW replaces "Centralized Trust" with **"Programmable Trust."**
 
+---
+
 ### 🧠 Sui — The Brain (Smart Escrow)
-Every project on KROW is a **Sui Object**. 
+
+Every project on KROW is a **Sui Object**.
+
 - **Non-Custodial Escrow:** Funds are locked in a smart contract, not held by a company.
 - **Programmable Logic:** Payments are released automatically based on milestones, deadlines, or multisig approvals.
 - **Fast & Cheap:** Leveraging Sui’s parallel execution for near-instant agreement updates.
 
+---
+
 ### 🛡️ Walrus — The Vault (Encrypted Proof-of-Delivery)
+
 Large deliverables (Source code, 4K Video, High-res designs) are stored on **Walrus**.
+
 - **Cryptographic Evidence:** Freelancers upload work to Walrus, generating a permanent blob ID.
 - **Encrypted Access:** Files are encrypted; the decryption key is only released via the Sui smart contract once the client confirms payment or a milestone is met.
 - **Immutability:** Clients cannot claim "I didn't receive the file" if the blob ID is recorded on-chain.
 
+---
+
 ### 💹 DeepBook — The Bank (Instant Settlement)
+
 Global work needs global currency flexibility.
+
 - **Cross-Token Payments:** A client can pay in SUI, while the freelancer receives USDC or their preferred stablecoin.
 - **Deep Liquidity:** DeepBook handles the back-end conversion instantly with minimal slippage, protecting freelancers from crypto volatility.
 
@@ -72,8 +84,9 @@ Global work needs global currency flexibility.
 2. **Execution:** Freelancer starts working. Progress is tracked via on-chain milestones.
 3. **Delivery:** Freelancer uploads the final asset to **Walrus**. The system generates an encrypted blob and records the proof on Sui.
 4. **Verification:** Client receives a notification. They can view a preview or low-res version.
-5. **Settlement:** 
-   - Client clicks "Approve" -> Payment is released.
+
+5. **Settlement:**
+   - Client clicks "Approve" → Payment is released.
    - If a different token is needed, **DeepBook** swaps it mid-flight.
    - Decryption key is handed over to the client automatically.
 
@@ -82,17 +95,17 @@ Global work needs global currency flexibility.
 ## 📈 Scalability & Sustainability
 
 - **Architecture:** Built using Sui’s object-centric model, allowing the platform to handle thousands of concurrent projects without congestion.
-- **Cost Efficiency:** Using Walrus for storage is significantly cheaper than any other decentralized or on-chain storage solution.
+- **Cost Efficiency:** Using Walrus for storage is significantly cheaper than other decentralized or on-chain storage solutions.
 - **Adoption:** Designed with a "Web2-first" UX focus to capture the 99% of freelancers who aren't yet in crypto.
 
 ---
 
 ## 🗺️ Roadmap
 
-- [ ] **Phase 1:** Core Escrow Move Contract & Walrus Integration (MVP).
-- [ ] **Phase 2:** DeepBook Auto-Swap integration for multi-currency support.
-- [ ] **Phase 3:** AI-Powered Dispute Analyzer (Analyzing Walrus-stored chat logs).
-- [ ] **Phase 4:** Decentralized Reputation System (On-chain Freelancer CV).
+- [ ] **Phase 1:** Core Escrow Move Contract & Walrus Integration (MVP)
+- [ ] **Phase 2:** DeepBook Auto-Swap Integration for Multi-Currency Support
+- [ ] **Phase 3:** AI-Powered Dispute Analyzer (Analyzing Walrus-stored chat logs)
+- [ ] **Phase 4:** Decentralized Reputation System (On-chain Freelancer CV)
 
 ---
 
@@ -104,9 +117,12 @@ Global work needs global currency flexibility.
 
 ---
 
-## 📊 Project Workflow & Architecture
+## 📊 Project Workflow
+
+Below is the technical flow of **KROW**, illustrating the interaction between the Client, Freelancer, and the Sui Ecosystem.
 
 ### 1. Interaction Flow
+
 ```mermaid
 sequenceDiagram
     participant C as Client
@@ -132,13 +148,15 @@ sequenceDiagram
     D-->>S: Return Preferred Token (e.g., USDC)
     S->>F: 8. Release Payment & Unlock Key
     S->>C: 9. Access Final Deliverables (Walrus)
-    
+
     Note over C,F: Phase 4: Feedback & Rep
     C->>S: 10. Rate Freelancer (On-chain Reputation)
+```
 
+```mermaid
 graph TD
     User((User: Client/Freelancer)) -->|zkLogin| Frontend[Next.js Application]
-    
+
     subgraph Sui Ecosystem
         Frontend -->|Execute Move Calls| SuiContract[Krow Smart Escrow]
         SuiContract -->|Read/Write Metadata| Objects[Sui Objects / NFTs]
@@ -152,7 +170,10 @@ graph TD
 
     style Sui Ecosystem fill:#f9f,stroke:#333,stroke-width:2px
     style Decentralized Storage fill:#bbf,stroke:#333,stroke-width:2px
+```
 
-    
-## Developed for Lofi the Yeti Hackathon 🏔️
-*Bridging creative freedom with programmable trust.*
+---
+
+## 🚀 Developed for the Lofi the Yeti Hackathon
+
+*Bridging the gap between creative freedom and programmable trust.*
