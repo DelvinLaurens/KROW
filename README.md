@@ -1,7 +1,7 @@
 <p>
   <img src="assets/logo without bg by chatgptplus.png" width="250" alt="Krow Logo">
 </p>
----
+
 
 # KROW 
 ### Programmable Trust for Global Freelance Work
