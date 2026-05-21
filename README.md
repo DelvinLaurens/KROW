@@ -104,9 +104,7 @@ Global work needs global currency flexibility.
 
 ---
 
-## 📊 Project Workflow
-
-Below is the technical flow of **Krow**, illustrating the interaction between the Client, Freelancer, and the Sui Ecosystem.
+## 📊 Project Workflow & Architecture
 
 ### 1. Interaction Flow
 ```mermaid
@@ -137,26 +135,3 @@ sequenceDiagram
     
     Note over C,F: Phase 4: Feedback & Rep
     C->>S: 10. Rate Freelancer (On-chain Reputation)
-
-    graph TD
-    User((User: Client/Freelancer)) -->|zkLogin| Frontend[Next.js Application]
-    
-    subgraph Sui Ecosystem
-        Frontend -->|Execute Move Calls| SuiContract[Krow Smart Escrow]
-        SuiContract -->|Read/Write Metadata| Objects[Sui Objects / NFTs]
-        SuiContract -->|Swap Assets| DB[DeepBook CLOB]
-    end
-
-    subgraph Decentralized Storage
-        Frontend -->|Upload Large Assets| Walrus[Walrus Storage]
-        Walrus -->|Blob ID Verification| SuiContract
-    end
-
-    style Sui Ecosystem fill:#f9f,stroke:#333,stroke-width:2px
-    style Decentralized Storage fill:#bbf,stroke:#333,stroke-width:2px
-
-    
-**Developed for the Lofi the Yeti Hackathon.**
-*Bridging the gap between creative freedom and programmable trust.*
-
-
